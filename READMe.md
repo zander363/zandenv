@@ -1,5 +1,13 @@
 # Make VIM in Windows with Chinese
 
+## 0. Font in console setting
+首先，為了改變微軟難看的新細明體，我上網找到一款適合開發使用的字體[YaHei Consolas](./YaHei Consolas Hybrid 1.12.ttf)
+為了使用雅黑體，需要先改變shell的編碼，預設CodePage可以使用chcp來查詢，Ex:950-Big5
+而雅黑體所需使用之編碼為utf-8，CodePage=65001
+可使用下列兩種方式更改預設CodePage
+-將指令`chcp 65001`存入bat檔中預設呼叫即可
+-進登入檔(regedit.exe)，在`電腦\HKEY\_CURRENT\_USER\Console\%System32\_cmd.exe`新增一組類型為REG\_DWORD的資料名稱為CodePage，而值為十進位之65001
+
 ## 1. Download VIM
 因為許多Plugin需要用到Python,Lua等Script Language，因此建議使用有支援的版本。而取得有支援的版本不外乎兩種方法:一為找尋現成資源，二為自行編譯產生。
 方便起見，這邊為官方github的載點:
@@ -24,7 +32,5 @@ filetype plugin indent on
 ```
 搭配著:PluginInstall等指令，就可以達到插件管理的成果了。
 目前先寫到這，有新發現再補。
-
-有想加入cmd&powershell設定字體過程(第0項之類的)
 
 

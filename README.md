@@ -1,7 +1,7 @@
 # Make VIM in Windows with Chinese
 
 ## 0. Font in console setting
-首先，為了改變微軟難看的新細明體，我上網找到一款適合開發使用的字體[YaHei Consolas]("YaHei Consolas Hybrid 1.12.ttf")
+首先，為了改變微軟難看的新細明體，我上網找到一款適合開發使用的字體[YaHei Consolas](YaHei\ Consolas\ Hybrid\ 1.12.ttf)
 為了使用雅黑體，需要先改變shell的編碼，預設CodePage可以使用chcp來查詢，Ex:950-Big5
 而雅黑體所需使用之編碼為utf-8，CodePage=65001
 可使用下列兩種方式更改預設CodePage

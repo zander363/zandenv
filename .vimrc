@@ -1,15 +1,15 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#begin('~/.vim/bundle/vundle/')
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin('~/.vim/bundle/Vundle.vim/')
 filetype plugin indent on
 
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'Valloric/YouCompleteMe'
+""Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on 
